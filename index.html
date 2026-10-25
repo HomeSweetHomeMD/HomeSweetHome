@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f4ee">
+  <meta name="description" content="Home Sweet Home — przytulny apartament w Mszanie Dolnej. Zobacz zdjęcia, poznaj okolicę i zarezerwuj pobyt na Booking.com lub Airbnb.">
+  <title>Home Sweet Home — odpocznij w Mszanie Dolnej</title>
+  <link rel="icon" type="image/svg+xml" href="logo.svg">
+  <link rel="preconnect" href="https://cf.bstatic.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body data-page="home">
+  <div class="topline"><div class="wrap topline-inner"><div class="topline-links"><a href="https://mszana-dolna.pl/kontakt/urzad-miasta" target="_blank" rel="noopener noreferrer">MSZANA DOLNA</a><i aria-hidden="true">·</i><a href="https://www.odkryjbeskidwyspowy.pl/" target="_blank" rel="noopener noreferrer">BESKID WYSPOWY</a></div><span>Twój spokojny przystanek blisko gór</span></div></div>
+  <header class="site-header"><div class="wrap header-inner">
+    <a class="brand" href="index.html" aria-label="Home Sweet Home — strona główna"><img class="brand-logo" src="logo.svg" alt=""><span class="brand-name">Home Sweet Home<small>Mszana Dolna</small></span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Otwórz menu"><span></span><span></span></button>
+    <nav class="main-nav" id="main-nav" aria-label="Menu główne">
+      <a class="active" aria-current="page" href="index.html">Start</a><a href="apartament.html">Apartament</a><a href="galeria.html">Galeria</a><a href="okolica.html">Okolica</a><a href="kontakt.html">Kontakt</a>
+    </nav>
+    <a class="button button-dark header-cta" href="https://www.booking.com/hotel/pl/home-sweet-home-mszana-dolna.pl.html" target="_blank" rel="noopener noreferrer" data-booking-link>Rezerwuj pobyt <span aria-hidden="true">↗</span></a>
+  </div></header>
+
+  <main>
+    <section class="home-hero wrap">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="eyebrow-line"></span> DOBRZE TU BYĆ</div>
+        <h1>Odetchnij.<br><em>Zostań chwilę.</em></h1>
+        <p class="lead">Przytulny apartament, własny balkon i góry na wyciągnięcie ręki. Home Sweet Home czeka na Ciebie w Mszanie Dolnej.</p>
+        <div class="hero-actions"><a class="button button-dark" href="apartament.html">Poznaj apartament <span aria-hidden="true">→</span></a><a class="text-link" href="galeria.html">Zobacz zdjęcia <span aria-hidden="true">↗</span></a></div>
+        <div class="hero-note"><span class="note-icon" aria-hidden="true">✳</span><span><strong>Mały azyl w górach</strong><br>50 m² wygodnej przestrzeni dla Ciebie</span></div>
+      </div>
+      <div class="hero-art">
+        <img class="hero-image" src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/910836847.jpg?k=8487a28049c19c3cad301a97f713897ae25ce2e3a9d04a0cc4391b7585adcfb8&amp;o=" alt="Żółty rower z koszykiem i napisem Home Sweet Home przed wejściem do apartamentu" fetchpriority="high" decoding="async">
+        <div class="hero-caption"><span class="caption-sparkle" aria-hidden="true">✳</span><span>Twój własny kawałek spokoju</span></div>
+        <div class="hero-stamp" aria-label="Zapraszamy do Mszany Dolnej"><span>tu</span><strong>zwolnisz</strong><span>tempo</span></div>
+      </div>
+      <div class="booking-card" id="rezerwacja">
+        <div class="booking-intro"><span class="booking-icon" aria-hidden="true">⌁</span><div><strong>Zapowiada się wyjazd?</strong><small>Wybierz daty i sprawdź dostępność</small></div></div>
+        <form class="booking-form" id="booking-form">
+          <label class="date-field"><span>Przyjazd</span><input id="checkin" name="checkin" type="date" required></label>
+          <label class="date-field"><span>Wyjazd</span><input id="checkout" name="checkout" type="date" required></label>
+          <label class="guest-field"><span>Dorośli</span><select id="guest-count" name="adults" aria-label="Liczba dorosłych"><option value="1">1 osoba</option><option value="2" selected>2 osoby</option></select></label>
+          <button class="button button-dark booking-submit" type="submit">Sprawdź terminy <span aria-hidden="true">→</span></button>
+        </form>
+        <div class="booking-results" id="booking-results" hidden aria-live="polite"><p id="booking-message">Wybierz serwis, w którym chcesz sprawdzić dostępność:</p><div><a class="button button-dark" id="booking-choice" href="https://www.booking.com/hotel/pl/home-sweet-home-mszana-dolna.pl.html" target="_blank" rel="noopener noreferrer">Booking.com <span aria-hidden="true">↗</span></a><a class="button button-light" id="airbnb-choice" href="https://www.airbnb.pl/rooms/1710311984842002623" target="_blank" rel="noopener noreferrer">Airbnb <span aria-hidden="true">↗</span></a></div></div>
+        <p class="booking-hint">Dzieci i szczegóły pobytu uzupełnisz bezpośrednio w serwisie rezerwacyjnym.</p>
+      </div>
+    </section>
+
+    <section class="intro-section section-space"><div class="wrap intro-grid">
+      <div class="section-heading"><div class="eyebrow"><span class="eyebrow-line"></span> HOME SWEET HOME</div><h2>Miejsce, w którym<br><em>łatwo poczuć się jak u siebie.</em></h2></div>
+      <div class="intro-text"><p>Jasne wnętrza, ciepłe drewno i wszystko, co potrzebne, żeby wygodnie odpocząć po dniu spędzonym na szlaku albo po prostu nacieszyć się wolniejszym rytmem.</p><a class="text-link" href="apartament.html">Zobacz, co na Ciebie czeka <span aria-hidden="true">→</span></a></div>
+    </div></section>
+
+    <section class="feature-strip wrap" aria-label="Najważniejsze udogodnienia">
+      <div class="feature-item"><span class="feature-icon" aria-hidden="true">⌂</span><div><strong>Cały apartament</strong><small>50 m² do Twojej dyspozycji</small></div></div>
+      <div class="feature-item"><span class="feature-icon" aria-hidden="true">☼</span><div><strong>Balkon i ogród</strong><small>Poranna kawa na świeżym powietrzu</small></div></div>
+      <div class="feature-item"><span class="feature-icon" aria-hidden="true">⌘</span><div><strong>Wygodny pobyt</strong><small>Kuchnia, Wi-Fi i klimatyzacja</small></div></div>
+      <div class="feature-item"><span class="feature-icon" aria-hidden="true">↟</span><div><strong>Blisko natury</strong><small>Górskie okolice Mszany Dolnej</small></div></div>
+    </section>
+
+    <section class="home-gallery section-space"><div class="wrap">
+      <div class="section-top"><div><div class="eyebrow"><span class="eyebrow-line"></span> ROZEJRZYJ SIĘ</div><h2>Przestrzeń dla <em>dobrych chwil.</em></h2></div><a class="text-link" href="galeria.html">Przejdź do galerii <span aria-hidden="true">→</span></a></div>
+      <div class="preview-grid">
+        <a class="preview-photo preview-large" href="galeria.html" aria-label="Zobacz galerię apartamentu"><img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/876928727.jpg?k=5f7dd1991b31ae7eeb890b3268f4191bb6daa705ac7bef2f91aa684c52a0c4fe&amp;o=" alt="Salon z drewnianą podłogą i schodami" loading="lazy" decoding="async"><span class="photo-label">Wspólny czas, własny rytm</span></a>
+        <a class="preview-photo" href="galeria.html" aria-label="Zobacz sypialnię w galerii"><img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/876928742.jpg?k=14765866fbe4bd0435ccb44399810f147807a392fc65407a8ff9f35dcd4b68c5&amp;o=" alt="Przytulna sypialnia w Home Sweet Home" loading="lazy" decoding="async"></a>
+        <a class="preview-photo" href="galeria.html" aria-label="Zobacz ogród w galerii"><img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/876928715.jpg?k=60814e261cf94b3b3d40090ae6efe388f67d188a91c2f0680de1617ccd451754&amp;o=" alt="Ogród z drewnianą ławką" loading="lazy" decoding="async"><span class="photo-count">Więcej zdjęć <span aria-hidden="true">↗</span></span></a>
+      </div>
+    </div></section>
+
+    <section class="neighborhood-band"><div class="wrap neighborhood-grid"><div class="neighborhood-copy"><div class="eyebrow eyebrow-pale"><span class="eyebrow-line"></span> TUŻ ZA PROGIEM</div><h2>Góry, ścieżki<br>i <em>odrobina nicnierobienia.</em></h2><p>Mszana Dolna leży wśród zielonych wzgórz Beskidu Wyspowego i Gorców. Wybierz spokojny spacer po mieście albo wyrusz na pobliski szlak.</p><a class="button button-outline" href="okolica.html">Odkryj okolicę <span aria-hidden="true">→</span></a></div><div class="neighborhood-image"><img src="https://mszana-dolna.pl/fileadmin/_processed_/4/0/csm_Galeria_082_d4d6469149.jpg" alt="Krajobraz okolic Mszany Dolnej" loading="lazy" decoding="async"><span>Witaj w Mszanie Dolnej</span></div></div></section>
+
+    <section class="closing-cta section-space"><div class="wrap closing-inner"><span class="closing-star" aria-hidden="true">✳</span><div><div class="eyebrow"><span class="eyebrow-line"></span> CZAS NA ODPOCZYNEK</div><h2>Przyjedź. <em>Rozgość się.</em></h2><p>Sprawdź wolny termin w wybranym serwisie rezerwacyjnym.</p></div><div class="closing-actions"><a class="button button-dark" href="https://www.booking.com/hotel/pl/home-sweet-home-mszana-dolna.pl.html" target="_blank" rel="noopener noreferrer" data-booking-link>Booking.com <span aria-hidden="true">↗</span></a><a class="button button-light" href="https://www.airbnb.pl/rooms/1710311984842002623" target="_blank" rel="noopener noreferrer" data-airbnb-link>Airbnb <span aria-hidden="true">↗</span></a></div></div></section>
+  </main>
+
+  <footer class="site-footer"><div class="wrap footer-main"><a class="brand footer-brand" href="index.html"><img class="brand-logo" src="logo.svg" alt=""><span class="brand-name">Home Sweet Home<small>Mszana Dolna</small></span></a><p>Twój spokojny przystanek<br>w Beskidzie Wyspowym.</p><div class="footer-nav"><a href="apartament.html">Apartament</a><a href="galeria.html">Galeria</a><a href="okolica.html">Okolica</a><a href="kontakt.html">Kontakt</a></div><a class="footer-contact" href="tel:+48721813756">+48 721 813 756</a></div><div class="wrap footer-bottom"><span>© <span data-year></span> Home Sweet Home · Mszana Dolna</span><span>Informacje o apartamencie: <a href="https://www.booking.com/hotel/pl/home-sweet-home-mszana-dolna.pl.html" target="_blank" rel="noopener noreferrer">Booking.com</a> · O okolicy: <a href="https://mszana-dolna.pl/dla-turysty/o-mszanie" target="_blank" rel="noopener noreferrer">Miasto Mszana Dolna</a></span></div></footer>
+  <a class="mobile-book" href="https://www.booking.com/hotel/pl/home-sweet-home-mszana-dolna.pl.html" target="_blank" rel="noopener noreferrer" data-booking-link>Sprawdź dostępność na Booking.com <span aria-hidden="true">↗</span></a>
+</body>
+</html>
